@@ -39,3 +39,9 @@ Route::get('/about', function () {
                 Route::get('/contact', function () {
                     return view('contactpage');
                     });
+
+
+                    Route::get('/dash', function () {
+                        return view('layouts.dashbord');
+                    });
+
