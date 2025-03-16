@@ -14,9 +14,17 @@
         </h3>
         <nav aria-label="breadcrumb">
           <ul class="breadcrumb">
+
             <li class="breadcrumb-item active" aria-current="page">
+
               <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('users.index') }}">
+                  <span class="menu-title">User Management</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+              </a>
+          </li>
           </ul>
         </nav>
       </div>

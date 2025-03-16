@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,3 +47,7 @@ Route::get('/about', function () {
                         return view('layouts.dashbord');
                     });
 
+
+                    Route::resource('users', UsersController::class);
+
+                    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

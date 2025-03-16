@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title ', 'Home')
+@section('title' , 'home')
     
 @section ('content')
 <section class="banner_main">
