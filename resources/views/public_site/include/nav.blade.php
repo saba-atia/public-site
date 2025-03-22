@@ -4,23 +4,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarsExample04">
        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-             <a class="nav-link" href="index.html">Home</a>
+          <li class="nav-item ">
+             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="about.html">About</a>
+             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="room.html">Our room</a>
+             <a class="nav-link" href="/ourroom">Our room</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="gallery.html">Gallery</a>
+             <a class="nav-link" href="/booking">Booking</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="blog.html">Blog</a>
+             <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="contact.html">Contact Us</a>
+             <a class="nav-link" href="/contact">Contact Us</a>
           </li>
        </ul>
     </div>

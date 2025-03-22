@@ -13,12 +13,12 @@
              <div class="col-md-4">
                 <h3>Menu Link</h3>
                 <ul class="link_menu">
-                   <li class="active"><a href="#">Home</a></li>
-                   <li><a href="about.html"> about</a></li>
-                   <li><a href="room.html">Our Room</a></li>
-                   <li><a href="gallery.html">Gallery</a></li>
-                   <li><a href="blog.html">Blog</a></li>
-                   <li><a href="contact.html">Contact Us</a></li>
+                   <li class="active"><a href="/">Home</a></li>
+                   <li><a href="/about"> about</a></li>
+                   <li><a href="/ourroom">Our Room</a></li>
+                   <li><a href="/booking">Booking</a></li>
+                   <li><a href="/blog">Blog</a></li>
+                   <li><a href="/contact">Contact Us</a></li>
                 </ul>
              </div>
              <div class="col-md-4">

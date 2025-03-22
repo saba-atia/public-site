@@ -1,5 +1,5 @@
 
-@extends('layouts.dashbord')
+@extends('dashborde.dashhome')
 
 @section('content')
     <div class="container">

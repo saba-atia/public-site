@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('public_site.layouts.welcome')
 @section('title' , 'our room')
 
 @section('content')

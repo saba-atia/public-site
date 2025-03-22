@@ -1,4 +1,4 @@
-@extends('home')
+@extends('dashborde.dashhome')
 
 
 @section('content')
