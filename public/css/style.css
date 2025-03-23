@@ -1074,3 +1074,141 @@ line-height: 35px;
 .btn-danger:hover {
     background-color: #c82333;
 }
+
+
+    .room-img {
+        border-radius: 15px; /* حواف مدورة */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثيرات عند التحويم */
+        max-width: 100%; /* التأكد من أن الصورة لا تتجاوز حجمها الأصلي */
+        height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    }
+
+    .room-img:hover {
+        transform: scale(1.05); /* تكبير الصورة قليلاً عند التحويم */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التحويم */
+    }
+
+    .card-title {
+     font-size: 24px;
+     font-weight: bold;
+     color: #333; /* لون داكن للنص */
+     margin-top: 15px;
+ }
+
+ .card-text {
+     font-size: 16px;
+     color: #555; /* لون رمادي للنص */
+     margin-bottom: 10px;
+ }
+
+ .card-text strong {
+     color: #007bff; /* لون أزرق للنص الغامق */
+ }
+ .btn-primary {
+     background-color: #007bff; /* لون أزرق */
+     border: none;
+     padding: 10px 20px;
+     font-size: 16px;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-primary:hover {
+     background-color: #0056b3; /* لون أزرق داكن عند التحويم */
+ }
+
+ .btn-danger {
+     background-color: #dc3545; /* لون أحمر */
+     border: none;
+     padding: 5px 10px;
+     font-size: 14px;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-danger:hover {
+     background-color: #c82333; /* لون أحمر داكن عند التحويم */
+ }
+
+ .table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+
+ .table th, .table td {
+     padding: 12px;
+     text-align: center;
+     border: 1px solid #ddd;
+ }
+
+ .table th {
+     background-color: #007bff; /* لون أزرق للرأس */
+     color: white;
+     font-weight: bold;
+ }
+
+ .table tbody tr:hover {
+     background-color: #f1f1f1; /* تغيير لون الصف عند التحويم */
+ }
+
+ .badge {
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-size: 14px;
+ }
+
+ .badge-success {
+     background-color: #28a745; /* لون أخضر */
+     color: white;
+ }
+
+ .badge-warning {
+     background-color: #ffc107; /* لون أصفر */
+     color: black;
+ }
+
+ .badge-danger {
+     background-color: #dc3545; /* لون أحمر */
+     color: white;
+ }
+ .modal-content {
+     border-radius: 10px;
+     border: none;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ .modal-header {
+     background-color: #007bff; /* لون أزرق */
+     color: white;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+
+ .modal-title {
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .modal-body {
+     padding: 20px;
+ }
+
+ .form-group label {
+     font-weight: bold;
+     color: #333;
+ }
+
+ .form-control {
+     border-radius: 5px;
+     border: 1px solid #ddd;
+     padding: 10px;
+     font-size: 16px;
+ }
+
+ .form-control:focus {
+     border-color: #007bff;
+     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+ }
+ 

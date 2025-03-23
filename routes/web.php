@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\RoomContoller;
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -59,3 +61,6 @@ Route::get('/about', function () {
                     Route::get('/booking/search', [BookingController::class, 'search'])->name('booking.search');
 
                     Route::delete('/booking/{id}', [BookingController::class, 'cancel'])->name('booking.cancel');
+
+
+                    Route::get('/ourroom', [RoomController::class, 'index'])->name('ourroom');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Booking;
+use App\Models\Room;
 use App\Models\service;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,11 @@ class BookingController extends Controller
     {
         $query = Service::query();
         $services = Service::where('is_available', true)->get();
-       
+        $roomId = $request->query('room_id'); // الحصول على room_id من الـ query string
+        if ($roomId) {
+            $room = Room::findOrFail($roomId); // جلب تفاصيل الغرفة المحددة
+            return view('public_site.layouts.bookingpage', compact('room'));
+        }
         if (auth()->check()) {
             // جلب حجوزات المستخدم الحالي فقط
             $bookings = Booking::where('user_id', auth()->id())->get();
@@ -34,7 +39,8 @@ class BookingController extends Controller
         if ($request->has('sort') && $request->has('direction')) {
             $query->orderBy($request->sort, $request->direction);
         }
-    
+        $services = Service::all();
+
         $services = $query->get();
         $bookings = [];
     

@@ -13,13 +13,23 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->constrained()->onDelete('cascade'); // ربط الحجز بالخدمة
-            $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null'); // ربط الحجز بالمستخدم (إذا كان لديك نظام مستخدمين)
-            $table->date('booking_date'); // تاريخ الحجز
-            $table->time('booking_time'); // وقت الحجز
-            $table->string('status')->default('pending'); // حالة الحجز (مثلاً: pending, confirmed, cancelled)
-            $table->timestamps(); // created_at و updated_at
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('room_id')->constrained()->onDelete('cascade'); // ✅ تأكد من وجود هذا السطر
+            $table->date('booking_date');
+            $table->time('booking_time');
+            $table->decimal('total_price', 8, 2)->default(0);
+            $table->string('status')->default('pending');
+            $table->boolean('breakfast')->default(false);
+            $table->boolean('lunch')->default(false);
+            $table->boolean('dinner')->default(false);
+            $table->boolean('room_service')->default(false);
+            $table->boolean('parking')->default(false);
+            $table->boolean('wifi')->default(false);
+            $table->boolean('gym')->default(false);
+            $table->boolean('pool')->default(false);
+            $table->timestamps();
         });
+        
     }
 
     /**
